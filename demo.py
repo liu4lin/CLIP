@@ -20,4 +20,5 @@ with torch.no_grad():
 end = time.time()
 
 print("Label probs:", probs, "by", device)  # prints: [[0.9927937  0.00421068 0.00299572]]
+
 print("Elapsed time:", end - start)
