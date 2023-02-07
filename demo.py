@@ -4,6 +4,7 @@ import time
 from PIL import Image
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
+
 start = time.time()
 model, preprocess = clip.load("ViT-B/32", device=device, download_root='./')
 
